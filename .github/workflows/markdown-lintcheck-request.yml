@@ -18,3 +18,4 @@ jobs:
         run: $(npm bin)/markdownlint **/*.md --ignore node_modules | reviewdog -efm="%f:%l %m" -name="markdownlint" -diff="git diff HEAD" -reporter=github-pr-review -tee | reviewdog -efm="%f:%l:%c %m" -name="markdownlint" -diff="git diff HEAD" -reporter=github-pr-review -tee
         env:
           REVIEWDOG_GITHUB_API_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
