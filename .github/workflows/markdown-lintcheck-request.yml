@@ -8,8 +8,11 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
-      - name: Run markdownlint with reviewdog
-        uses: reviewdog/action-markdownlint@v0.1
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          reporter: github-pr-review
+      - name: Setup reviewdog
+        uses: reviewdog/action-setup@v1.0.0
+        env:
+          ACTIONS_ALLOW_UNSECURE_COMMANDS: true
+      - name: Install markdownlint-cli
+        run: npm install markdownlint-cli
+      - name: Run markdownlint-cli
+        run: $(npm bin)/markdownlint **/*.md --ignore node_modules | reviewdog -efm="%f:%l %m" -name="markdownlint" -diff="git diff HEAD" -reporter=github-pr-review -tee | reviewdog -efm="%f:%l:%c %m" -name="markdownlint" -diff="git diff HEAD" -reporter=github-pr-review -tee
