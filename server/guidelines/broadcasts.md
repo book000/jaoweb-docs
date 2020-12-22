@@ -15,9 +15,9 @@ okaissi
 
 A但し、jao Minecraft Serverの公式Discordサーバ(jMS Gamers Club)のボイスチャットチャンネルにおける配信(GoLive)は例外とします。
 
-### 基本方針
+### 基本方針。
 
-- 配信を行えるのは、**Verified以上の権限**からです。
+- 配信を行えるのは、**Verified以上の権限**からです、。
 - Minecraftサーバ内において**何かしらの建築経験**がない場合は配信を行えません。
 - Regular以上の権限を所持していない場合(Verified権限)は、`#support`で運営へ申請し、許可をもらってください。  
   申請には次の項目が必要です。
