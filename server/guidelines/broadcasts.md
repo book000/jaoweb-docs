@@ -6,14 +6,14 @@ image: https://storage.jaoafa.com/07602493134c9bf0a102c34304de2494.png
 このページでは、jao Minecraft Serverにおける「撮影・SNSへの投稿」「動画配信サイトにおける配信」について、運営側の方針と投稿・配信者に向けたガイドラインを定義します。
 
 ## 目次
-
+powa
 <!--contents-->
 
 ## 配信を行う場合
-
+okaissi
 この項では、YouTube、ニコニコ動画・生放送、Twitch、ツイキャス、OPENRECなどの動画配信サービスへの「**配信**」(ここでは**動画投稿も含む**)、それらの閲覧・視聴について記載いたします。
 
-但し、jao Minecraft Serverの公式Discordサーバ(jMS Gamers Club)のボイスチャットチャンネルにおける配信(GoLive)は例外とします。
+A但し、jao Minecraft Serverの公式Discordサーバ(jMS Gamers Club)のボイスチャットチャンネルにおける配信(GoLive)は例外とします。
 
 ### 基本方針
 
