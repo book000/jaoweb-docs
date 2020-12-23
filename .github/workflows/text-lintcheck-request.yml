@@ -12,7 +12,7 @@ jobs:
         env:
           ACTIONS_ALLOW_UNSECURE_COMMANDS: true
       - name: Install NPM Packages
-        run: npm install package.json
+        run: npm install
       - name: Run textlint
         run: $(npm bin)/textlint -c .textlintrc -f checkstyle `echo ** | sed -e "s/node_modules //"` | reviewdog -f checkstyle -reporter=github-pr-review -name=textlint
         env:
