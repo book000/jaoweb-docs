@@ -15,4 +15,4 @@ jobs:
       - name: Install NPM Packages
         run: npm install -g package.json
       - name: Run textlint
-        run: $(npm -g bin)/textlint -c .textlintrc **
+        run: $(npm -g bin)/textlint -c .textlintrc `echo ** | sed -e "s/node_modules //"`
